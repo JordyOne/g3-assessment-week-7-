@@ -13,7 +13,14 @@
   <a href="/continents">Continents</a>
 </header>
 <div class="container">
+  <% if flash[:notice] %>
+      <p><%= flash[:notice] %></p>
+  <% end %>
+  <% if flash[:error] %>
+      <p><%= flash[:error] %></p>
+  <% end %>
   <%= yield %>
 </div>
+
 </body>
 </html>

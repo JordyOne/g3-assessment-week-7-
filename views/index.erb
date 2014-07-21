@@ -2,3 +2,21 @@
 
 <p>We show totally accurate lists of continents and countries!!</p>
 
+<h1>Do you have a message?</h1>
+
+<form method="post" action="/">
+  <li>Name: <input type="text" name="name"></li>
+  <li>Message:
+  <textarea name="message" type="text" cols="25" rows="5">
+  </textarea></li>
+  <input type="submit" value="Add Message" />
+</form>
+</form>
+
+<div>
+  <% if message %>
+      <%= message %>
+
+      <% end %>
+</div>
+
